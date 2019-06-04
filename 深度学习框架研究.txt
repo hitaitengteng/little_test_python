@@ -1,0 +1,29 @@
+﻿      tensorflow由于其语言太过于底层，目前有很多基于Tensorflow的第三方抽象库将Tensorflow的函数进行封装，使其变得简洁，目前比较有名的几个是Keras由于其语言太过于底层，目前有很多基于Tensorflow的第三方抽象库将Tensorflow的函数进行封装，使其变得简洁，目前比较有名的几个是Keras, Tlearn（百度没有搜到）, tfslim（瘦身代码，介绍说使用 tf-slim 库，可以帮助你快速搭建图像处理 ( 包括分类，分割 ) 的生产环境，）, 以及TensorLayer。（Tensorlayer是基于Tensorflow开发的的一个高层次API，简洁易用，并且增强了不少功能，能与Tensorflow进行无缝的互动，是一个很不错的二次开发库。）
+
+      Caffe
+
+      和Tensoflow名气- .样大的是深度学习框架Caffe,由加州大学伯克利的Phd贾扬清开发，全称是Convolutional Architecture for Fast Feature Embedding,是一- 个清晰而高效的开源深度学习框架,目前由伯克利视觉学中心( Berkeley Vision and Leaming Center,BVLC)进行维护。
+
+      从它的名字就可以看出其对于卷积网络的支持特别好，同时也是用C++写的，但是并没有提供Python接口，只提供了C++的接口。
+
+      Caffe之所以流行，是因为之前很多ImageNet比赛里面使用的网络都是用Caffe写的，所以如果你想使用这些比赛里面的网络模型就只能使用Caffe,这也就导致了很多人直接转到Caffe这个框架下面。
+
+      Caffe的缺点是不够灵活，同时内存占用高，只提供了C++的接口，目前Caffe的升级版本Caffe2已经开源了，修复了一些问题，同时工程水平得到了进-步提高。
+
+      Theano
+
+      Theano于2008年诞生于蒙特利尔理工学院，其派生出了大量深度学习Python软件包，最著名的包括Blocks和Keras。Theano 的核心是-一个数学表达式的编译器，它知道如何获取你的结构，并使之成为一个使用numpy,高效本地库的高效代码，如BLAS和本地代码(C++ )在CPU或GPU.上尽可能快地运行。它是为深度学习中处理大型神经网络算法所需的计算而专门设计的，是这类库的首创之- - (发展始于2007年),被认为是深度学习研究和开发的行业标准。
+
+      但是目前开发Theano的研究人员大多去了Google参与Tensorflow的开发，所以某种程度来讲Tensorflow 就像Theano的孩子。
+
+      Torch
+
+      Torch是一个有大量机器学习算法支持的科学计算框架，其诞生已经有十年之久，但是真正起势得益于Facebook开源了大量Torch的深度学习模块和扩展。Torch的特点在于特别灵活，但是另外-个特殊之处是采用了编程语言Lua.在目前深度学习大部分以Python为编程语言的大环境之下，一个以Lua为编程语言的框架有着更多的劣势，这一项小众的语言增加了学习使用Torch这个框架的成本。
+
+      本书的主角PyTorch的前身便是Torch,其底层和Torch框架- -样 ,但是使用Python重新写了很多内容，不仅更加灵活，支持动态图，也提供了Python接口。
+
+      MXNet
+
+      MXNet的主要作者是李沐，最早就是几个人抱着纯粹对技术和开发的热情做起来的兴趣项目，如今成为了亚马逊的官方框架，有着非常好的分布式支持，而且性能特别好，占用显存低，同时其开放的语言接口不仅仅有Python和C++,还有R, Matlab,Scala, JavaScript, 等等，可以说能够满足使用任何语言的人。
+
+      但是MXNet的缺点也很明显，教程不够完善，使用的人不多导致社区不大，同时每年很少有比赛和论文是基于MXNet实现的，这就使得MXNet的推广力度和知名度不高。

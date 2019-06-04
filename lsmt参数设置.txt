@@ -1,0 +1,25 @@
+Parameters
+
+input_size 输入特征维数：（特征向量的长度，如2048）
+hidden_size 隐层状态的维数：（每个LSTM单元或者时间步的输出的ht的维度，单元内部有权重与偏差计算）
+num_layers RNN层的个数：（在竖直方向堆叠的多个相同个数单元的层数）
+bias 隐层状态是否带bias，默认为true
+batch_first 是否输入输出的第一维为batchsize
+dropout 是否在除最后一个RNN层外的RNN层后面加dropout层
+bidirectional 是否是双向RNN，默认为false
+
+
+Inputs: input, (h_0, c_0)
+
+input (seq_len, batch, input_size) 时间步数或序列长度，batch数，输入特征维度。如果设置了batch_first，则batch为第一维。
+(h_0, c_0) 隐层状态
+
+h0 shape：(num_layers * num_directions, batch, hidden_size)
+
+c0 shape：(num_layers * num_directions, batch, hidden_size)
+
+
+Outputs: output, (h_n, c_n)
+
+output (seq_len, batch, hidden_size * num_directions) 包含每一个时刻的输出特征，如果设置了batch_first，则batch为第一维
+(h_n, c_n) 隐层状态

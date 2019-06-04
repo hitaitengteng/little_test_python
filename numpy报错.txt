@@ -1,0 +1,8 @@
+numpy报错
+若cmd里使用pandas报错，则使用命令
+pip uninstall pandas
+pip uninstall numpy
+pip install pandas
+
+若jupyternotebook报错
+则在anaconda软件中重装升级

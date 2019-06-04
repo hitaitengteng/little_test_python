@@ -1,0 +1,9 @@
+pycharm导入自定义模块出现红色的波浪线：
+
+1.不用管，可以正常运行的； 
+
+2.如果看着不舒服，可以进行以下过程进行设置即可：  
+file->settings->project->project structure->点击项目路径->点击Sources （或Excluded）。然后就正常显示了。
+快捷方式：右击模块->Mark Directory as -> Sources Root（或者Excluded）
+
+ 

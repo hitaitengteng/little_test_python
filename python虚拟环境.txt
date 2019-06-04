@@ -1,0 +1,7 @@
+#创建虚拟环境
+$ cd my_project_dir
+$ virtualenv venv　　#venv为虚拟环境目录名，目录名自定义
+#激活虚拟环境
+$ source venv/bin/activate
+#停止运行虚拟环境
+$ . venv/bin/deactivate
